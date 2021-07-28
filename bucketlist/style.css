@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lavender;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.header-container {
+    letter-spacing: 3px;
+}
+.header-container a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul {
+    list-style: none;
+    padding: 1em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+nav  li {
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 14px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav-icon img {
+    height: 12px;
+}
+#search-box {
+    background-color: #f3f3f3;
+    border-radius: 5%;
+    border-style: none;
+}
+#profile {
+    background-color: black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile a {
+    color: #fff;
+}
+.title {
+    display: flex;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+.title p {
+    margin-left: 2em;
+}
+#open-btn {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-modal {
+    background-color:#fffbf3;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    position: fixed;
+    left: calc(50vw - 200px);
+    top: calc(50vh - 200px);
+    z-index: 10;
+    display: none;
+    animation: openModalAnimation 0.5s ease-out;
+}
+#close-btn {
+    color: blue;
+}
+.modal-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-card-modal {
+    background-color: lightgray;
+    height: 150px;
+    width: 150px;
+}
+section {
+    margin-top: 5%;
+}
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+.card {
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    text-align: center;
+    margin: 20px;
+}
+.img-card {
+    height: 200px;
+    max-width: 85%;
+    margin-top: 1em;
+}
+.card ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.card li {
+    list-style: none;
+    cursor: pointer;
+    color: #8c8c8c;
+}
+.card li:hover {
+    color: #000;
+}
+@keyframes openModalAnimation {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
