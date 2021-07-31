@@ -58,19 +58,21 @@ nav a {
 .title {
     display: flex;
     justify-content: center;
-
+    align-items: center;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
+    margin-top: 5%;
 }
 .title p {
-    margin-left: 2em;
+    padding-right: 30px;
 }
-#open-btn {
+#open-btn, #close-btn {
     font-size: 16px;
     cursor: pointer;
+    background: transparent;
+    border: 0px solid transparent;
 }
-
 #add-modal {
     background-color:#fffbf3;
     width: 400px;
@@ -83,9 +85,6 @@ nav a {
     display: none;
     animation: openModalAnimation 0.5s ease-out;
 }
-#close-btn {
-    color: blue;
-}
 .modal-card-container {
     display: flex;
     justify-content: center;
@@ -96,13 +95,31 @@ nav a {
     height: 150px;
     width: 150px;
 }
-section {
-    margin-top: 5%;
+#add-text {
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    
 }
-#card-container {
+#add-btn {
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px; 
+    padding: 5px;
+    position: absolute;
+    right: 35px;
+}
+.horizontal-scroll {
+    overflow-x: auto;
+}
+.card-container {
     display: flex;
-    flex-wrap: wrap;
-    margin: 60px;
+    margin: 30px;
+    width: max-content;
 }
 .card {
     height: 300px;
@@ -118,18 +135,37 @@ section {
     margin-top: 1em;
 }
 .card ul {
-    display: flex;
-    justify-content: space-around;
     margin: 10px;
 }
 .card li {
     list-style: none;
     cursor: pointer;
     color: #8c8c8c;
+    font-size: 25px;
 }
 .card li:hover {
     color: #000;
 }
+.activeCheck {
+    color: #000 !important;
+}
+.themes {
+    display: flex;
+    text-transform: uppercase;
+}
+.themes ul {
+    list-style: none;
+    font-weight: 300;
+    margin: 0 20px 0 20px;
+}
+.themes  li {
+    display: inline-block;
+    margin-left: 3em;
+    font-size: 14px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
 @keyframes openModalAnimation {
     from {transform: scale(0);}
     to {transform: scale(1);}

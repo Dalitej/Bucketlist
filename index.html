@@ -18,7 +18,7 @@
                     <li class="nav-icon"><a href="#"><img src="https://image.flaticon.com/icons/png/512/54/54481.png" alt="search"></a></li>
                     <li><a href="#">Themes</a></li>
                     <li><a href="#">Feed</a></li>
-                    <li><a href="#">Your lists</a></li>
+                    <li><a href="#">My lists</a></li>
                     <!--<li><a href="#">Sign In</a></li>-->
                      <li id="profile"><a href="#">D</a></li>
                 </ul>
@@ -26,7 +26,7 @@
     </header>
     <section>
         <div class="title">
-            <p>My Summer list</p>
+            <p>My Bucket List</p>
             <button id="open-btn">+</button>
         </div>
             <div id="add-modal">
@@ -35,94 +35,101 @@
                     <div class="card">
                         <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                     <form>
-                        <input type="text" name="Add text" id="add-text"></input>
+                        <input type="text" name="Add text" placeholder="Add text" id="add-text"></input>
                     </form>
                     </div>
                 </div>
                 <button id="add-btn">Add</button>
             </div>
     </section>
-    <section>
-        <div id="card-container">
-            <div class="card">
+    <section class="horizontal-scroll">
+        <div class="card-container" id="card-container">
+            <!--<div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>Travel to Grece</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li id="checkbox">☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546237769-58c2846e87c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80" alt="eifel tower">
                 <p>Visit the Eifel Tower</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1531510382880-7c633627ca80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2553&q=80" alt="grece">
                 <p>Swedish archipelago</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>Sailboat</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>---</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>---</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>---</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>---</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
                 </ul>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1546465608-bec079b9a36d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>---</p>
                 <ul>
-                    <li>+</li>
-                    <li>⤿</li>
-                    <li>...</li>
+                    <li>☐</li>
+                </ul>
+            </div>-->
+        </div>
+    </section>
+    <section class="horizontal-scroll">
+        <div class="themes">
+            <ul>
+                <li id="underline-themes">Summer</li>
+                <li>Roadtrip</li>
+                <li>Vacation</li>
+            </ul>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
+                <p>Travel to Grece</p>
+                <ul>
+                    <li id="heart">♡</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
+                <p>Travel to Grece</p>
+                <ul>
+                    <li>♡</li>
                 </ul>
             </div>
         </div>
