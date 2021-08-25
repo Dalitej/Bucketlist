@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ header {
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    background-color: rgb(243, 243, 243);
 }
 .header-container {
     letter-spacing: 3px;
@@ -62,7 +65,7 @@ nav a {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
-    margin-top: 5%;
+    margin-bottom: 7em;
 }
 .title p {
     padding-right: 30px;
@@ -73,8 +76,11 @@ nav a {
     background: transparent;
     border: 0px solid transparent;
 }
+#open-btn:hover {
+    color:#8c8c8c;
+}
 #add-modal {
-    background-color:#fffbf3;
+    background-color:rgb(255, 254, 251, 0.9);
     width: 400px;
     height: 400px;
     padding: 10px;
@@ -91,7 +97,6 @@ nav a {
     align-items: center;
 }
 .background-card-modal {
-    background-color: lightgray;
     height: 150px;
     width: 150px;
 }
@@ -101,7 +106,9 @@ nav a {
     background: transparent;
     border: 1px solid transparent;
     text-align: center;
-    
+}
+#library {
+    padding: 15vh 0px;
 }
 #add-btn {
     font-size: 16px;
@@ -118,54 +125,83 @@ nav a {
 }
 .card-container {
     display: flex;
-    margin: 30px;
     width: max-content;
 }
 .card {
     height: 300px;
     width: 250px;
     background-color: white;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     text-align: center;
     margin: 20px;
+    position: relative;
 }
 .img-card {
     height: 200px;
-    max-width: 85%;
+    width: 85%;
     margin-top: 1em;
+    object-fit:cover;
 }
-.card ul {
-    margin: 10px;
-}
-.card li {
+.check {
     list-style: none;
     cursor: pointer;
     color: #8c8c8c;
     font-size: 25px;
+    margin: 6px;
 }
-.card li:hover {
+.check:hover {
     color: #000;
 }
-.activeCheck {
-    color: #000 !important;
+.delete {
+    cursor: pointer;
+    color: #8c8c8c;
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: 0px;
 }
-.themes {
+.delete:hover {
+    color: #000;
+}
+#feed {
+    padding: 15vh 0px;
+    background-color: rgb(174, 192, 189);
+}
+#themes {
+    padding: 15vh 0px;
+    background-color: rgb(179, 229, 245);
+}
+.themes-title {
     display: flex;
     text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 7em;
 }
-.themes ul {
+.themes-title ul {
     list-style: none;
     font-weight: 300;
-    margin: 0 20px 0 20px;
 }
-.themes  li {
+.themes-title  li {
     display: inline-block;
     margin-left: 3em;
     font-size: 14px;
-    margin-top: 30px;
     cursor: pointer;
 }
-
+.themes-title li:hover {
+    font-weight: 600;
+}
+.user {
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.heart {
+    cursor: pointer;
+    color: #8c8c8c;
+    font-size: 25px;
+}
+.heart:hover {
+    color: #000;
+}
 @keyframes openModalAnimation {
     from {transform: scale(0);}
     to {transform: scale(1);}

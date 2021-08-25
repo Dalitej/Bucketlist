@@ -16,15 +16,15 @@
                 <ul>
                     <!--<input type="search" name="search-box" id="search-box">-->
                     <li class="nav-icon"><a href="#"><img src="https://image.flaticon.com/icons/png/512/54/54481.png" alt="search"></a></li>
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">Feed</a></li>
-                    <li><a href="#">My lists</a></li>
+                    <li><a href="#library">My lists</a></li>
+                    <li><a href="#feed">Feed</a></li>
+                    <li><a href="#themes">Themes</a></li>
                     <!--<li><a href="#">Sign In</a></li>-->
                      <li id="profile"><a href="#">D</a></li>
                 </ul>
         </nav>
     </header>
-    <section>
+    <section id="library">
         <div class="title">
             <p>My Bucket List</p>
             <button id="open-btn">+</button>
@@ -33,7 +33,7 @@
                 <button id="close-btn">X</button>
                 <div class="modal-card-container">
                     <div class="card">
-                        <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
+                        <img class="img-card" src="https://images.unsplash.com/photo-1508615121316-fe792af62a63?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGxpbmVhciUyMGdyYWRpZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="placeholder">
                     <form>
                         <input type="text" name="Add text" placeholder="Add text" id="add-text"></input>
                     </form>
@@ -41,8 +41,7 @@
                 </div>
                 <button id="add-btn">Add</button>
             </div>
-    </section>
-    <section class="horizontal-scroll">
+    <div class="horizontal-scroll" id="background-library">
         <div class="card-container" id="card-container">
             <!--<div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
@@ -108,30 +107,55 @@
                 </ul>
             </div>-->
         </div>
+    </div>
     </section>
-    <section class="horizontal-scroll">
-        <div class="themes">
+
+    <section id="feed">
+        <div class="title">
+            <p>Friends Feed</p>
+        </div>
+        <div class="horizontal-scroll">
+        <div class="card-container" id="feed-container">
+        <!--<div class="card">
+                <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
+                <p>Travel to Grece</p>
+                <div>♡</div>
+            </div>
+            <div class="card">
+                <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
+                <p>Travel to Grece</p>
+                    <div>♡</div>
+            </div>-->
+        </div>
+        </div>
+    </section>
+    <section id="themes">
+        <div class="themes-title">
             <ul>
-                <li id="underline-themes">Summer</li>
+                <li>Summer</li>
                 <li>Roadtrip</li>
                 <li>Vacation</li>
+                <li>Nature</li>
+                <li>New Skills</li>
+                <li>Health</li>
+                <li>Food</li>
+                <li>Sports</li>
+                <li>DIY</li>
             </ul>
         </div>
-        <div class="card-container">
-            <div class="card">
+        <div class="horizontal-scroll">
+        <div class="card-container" id="themes-container">
+        <!--<div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>Travel to Grece</p>
-                <ul>
-                    <li id="heart">♡</li>
-                </ul>
+                <div>♡</div>
             </div>
             <div class="card">
                 <img class="img-card" src="https://images.unsplash.com/photo-1606577583855-7887c860e755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="grece">
                 <p>Travel to Grece</p>
-                <ul>
-                    <li>♡</li>
-                </ul>
-            </div>
+                    <div>♡</div>
+            </div>-->
+        </div>
         </div>
     </section>
     <footer>
